@@ -6,7 +6,7 @@ const spanStyle: React.CSSProperties = {
   fontFamily: 'var(--font-body)',
   fontSize: '0.75rem',
   fontWeight: 400,
-  letterSpacing: '0.1em',
+  letterSpacing: '0.05em',
   color: 'oklch(from var(--color-ink) l c h / 0.45)',
   whiteSpace: 'nowrap',
 };

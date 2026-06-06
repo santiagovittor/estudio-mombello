@@ -30,6 +30,7 @@ export default function Contact(_: ContactProps) {
     return (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       setValues((prev) => ({ ...prev, [field]: e.target.value }));
       if (formError) setFormError(null);
+      if (formState === 'error') setFormState('idle');
     };
   }
 
@@ -168,7 +169,7 @@ export default function Contact(_: ContactProps) {
                 marginBottom: '2.5rem',
               }}
             >
-              Gracias, {values.name}. Le respondemos a la brevedad.
+              Gracias, {values.name}. Fabio le responde a la brevedad.
             </p>
           ) : (
           <form
@@ -194,6 +195,9 @@ export default function Contact(_: ContactProps) {
                   placeholder="Nombre y apellido"
                   className="contact-input"
                   aria-required="true"
+                  aria-invalid={formError !== null || undefined}
+                  aria-describedby={formError ? 'contact-form-error' : undefined}
+                  maxLength={100}
                 />
               </div>
 
@@ -211,6 +215,9 @@ export default function Contact(_: ContactProps) {
                   placeholder="11 1234-5678 o nombre@correo.com"
                   className="contact-input"
                   aria-required="true"
+                  aria-invalid={formError !== null || undefined}
+                  aria-describedby={formError ? 'contact-form-error' : undefined}
+                  maxLength={150}
                 />
               </div>
 
@@ -224,9 +231,12 @@ export default function Contact(_: ContactProps) {
                   rows={4}
                   value={values.message}
                   onChange={handleChange('message')}
-                  placeholder="Cuéntenos brevemente su caso"
+                  placeholder="Cuénteme brevemente su caso"
                   className="contact-input contact-textarea"
                   aria-required="true"
+                  aria-invalid={formError !== null || undefined}
+                  aria-describedby={formError ? 'contact-form-error' : undefined}
+                  maxLength={1500}
                 />
               </div>
             </div>
@@ -235,6 +245,7 @@ export default function Contact(_: ContactProps) {
               {formError && (
                 <motion.p
                   role="alert"
+                  id="contact-form-error"
                   initial={{ opacity: 0, y: -4 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
@@ -242,8 +253,8 @@ export default function Contact(_: ContactProps) {
                   style={{
                     marginBottom: '1rem',
                     fontSize: '0.875rem',
-                    fontWeight: 500,
-                    color: 'var(--color-accent)',
+                    fontWeight: 700,
+                    color: 'var(--color-ink)',
                   }}
                 >
                   {formError}
@@ -278,7 +289,7 @@ export default function Contact(_: ContactProps) {
                     marginTop: '1rem',
                     fontSize: '0.9375rem',
                     fontWeight: 500,
-                    color: 'var(--color-accent)',
+                    color: 'var(--color-ink)',
                     lineHeight: 1.5,
                     textWrap: 'pretty' as never,
                   }}

@@ -49,11 +49,34 @@ function Slide({ review }: { review: Review }) {
       className="embla__slide"
       style={{
         minWidth: 0,
-        borderTop: '1px solid oklch(9% 0.01 245 / 0.10)',
+        borderTop: '1px solid oklch(9% 0.01 245 / 0.20)',
         paddingTop: 'clamp(1.5rem, 2.5vw, 2rem)',
         paddingBottom: 'clamp(1.5rem, 2.5vw, 2rem)',
+        position: 'relative',
+        isolation: 'isolate',
+        overflow: 'hidden',
       }}
     >
+      <span
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          top: '-0.25rem',
+          left: '-0.125rem',
+          fontSize: 'clamp(4rem, 8vw, 6rem)',
+          fontWeight: 900,
+          lineHeight: 0.75,
+          fontFamily: 'var(--font-display)',
+          color: 'var(--color-ink)',
+          opacity: 0.07,
+          userSelect: 'none',
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      >
+        {'“'}
+      </span>
+      <div style={{ position: 'relative', zIndex: 1 }}>
       <StarRating rating={review.rating} />
       <p
         style={{
@@ -95,6 +118,7 @@ function Slide({ review }: { review: Review }) {
         >
           Google · {formatDate(review.date)}
         </span>
+      </div>
       </div>
     </article>
   );
@@ -141,7 +165,7 @@ export default function Testimonials() {
       style={{
         backgroundColor: 'var(--color-paper)',
         paddingTop: 'clamp(4rem, 8vw, 6rem)',
-        paddingBottom: 'clamp(4rem, 8vw, 6rem)',
+        paddingBottom: 'clamp(2.5rem, 4vw, 4rem)',
         paddingLeft: 'clamp(1.5rem, 5vw, 6rem)',
         paddingRight: 'clamp(1.5rem, 5vw, 6rem)',
       }}
@@ -153,9 +177,9 @@ export default function Testimonials() {
             className="section-heading"
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(1.875rem, 4vw, 3rem)',
+              fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
               fontWeight: 900,
-              lineHeight: 1.1,
+              lineHeight: 1.05,
               color: 'var(--color-ink)',
               textWrap: 'balance',
               marginBottom: '0.75rem',
@@ -167,9 +191,9 @@ export default function Testimonials() {
             aria-label={`${GOOGLE_BIZ_RATING} estrellas, ${GOOGLE_BIZ_COUNT} opiniones en Google`}
             style={{
               fontFamily: 'var(--font-body)',
-              fontSize: '0.9375rem',
-              fontWeight: 400,
-              color: 'var(--color-muted)',
+              fontSize: '1rem',
+              fontWeight: 500,
+              color: 'var(--color-ink)',
               display: 'flex',
               alignItems: 'center',
               gap: '0.375rem',

@@ -56,7 +56,6 @@ export default function Hero() {
         flexDirection: 'column',
         backgroundColor: 'var(--color-hero-bg)',
         color: 'var(--color-hero-text)',
-        overflow: 'hidden',
       }}
     >
       <HeroStatic />
@@ -123,16 +122,18 @@ export default function Hero() {
           maxWidth: '90rem',
           margin: '0 auto',
           width: '100%',
-          padding: '7rem clamp(1.5rem, 5vw, 6rem) 0',
+          padding: '7rem clamp(1.5rem, 5vw, 6rem) 7rem',
           position: 'relative',
           zIndex: 5,
         }}
       >
         <div style={{ maxWidth: '42rem' }}>
           {/* Label */}
-          <motion.p
+          <motion.span
             {...fadeProps(0.1)}
+            className="hero-eyebrow"
             style={{
+              display: 'block',
               fontSize: '0.8125rem',
               fontWeight: 500,
               letterSpacing: '0.07em',
@@ -142,7 +143,7 @@ export default function Hero() {
             }}
           >
             Buenos Aires · {YEARS_EXPERIENCE} años de experiencia
-          </motion.p>
+          </motion.span>
 
           {/* H1 — clip-path line-by-line wipe */}
           <h1
@@ -198,7 +199,7 @@ export default function Hero() {
                 calls the prospect. Confirm before launch — CTA is visitor-initiated
                 WhatsApp but this line implies outbound. Not a contradiction, client
                 needs to know it is there. */}
-            He resuelto este tipo de caso durante 20 años.<br />Lo llamo hoy.
+            Resolví este tipo de caso durante 20 años.<br />Llámeme hoy.
           </motion.p>
 
           {/* CTAs */}

@@ -60,7 +60,7 @@ export default function PracticeAreas(_: PracticeAreasProps) {
       style={{
         backgroundColor: 'var(--color-paper)',
         paddingTop: 'clamp(4rem, 8vw, 7rem)',
-        paddingBottom: 'clamp(4rem, 8vw, 7rem)',
+        paddingBottom: 'clamp(2.5rem, 4vw, 4rem)',
         paddingLeft: 'clamp(1.5rem, 5vw, 6rem)',
         paddingRight: 'clamp(1.5rem, 5vw, 6rem)',
       }}
@@ -70,9 +70,9 @@ export default function PracticeAreas(_: PracticeAreasProps) {
           id="areas-heading"
           className="section-heading"
           style={{
-            fontSize: 'clamp(1.875rem, 4vw, 3rem)',
+            fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
             fontWeight: 900,
-            lineHeight: 1.1,
+            lineHeight: 1.05,
             color: 'var(--color-ink)',
             marginBottom: '0.875rem',
             textWrap: 'balance' as never,
@@ -100,7 +100,7 @@ export default function PracticeAreas(_: PracticeAreasProps) {
         <div
           className="grid grid-cols-1 md:grid-cols-3"
           style={{
-            columnGap: 'clamp(2rem, 4vw, 4rem)',
+            columnGap: 'clamp(3rem, 6vw, 6rem)',
             rowGap: 'clamp(2.5rem, 5vw, 3.5rem)',
           }}
         >
@@ -108,15 +108,15 @@ export default function PracticeAreas(_: PracticeAreasProps) {
             <div
               key={area.id}
               style={{
-                borderTop: '1px solid oklch(9% 0.01 245 / 0.10)',
+                borderTop: '1px solid var(--color-ink)',
                 paddingTop: '1.5rem',
               }}
             >
               <h3
                 style={{
-                  fontSize: 'clamp(1.5rem, 2.5vw, 2rem)',
+                  fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                   fontWeight: 900,
-                  lineHeight: 1.1,
+                  lineHeight: 1.05,
                   color: 'var(--color-ink)',
                   marginBottom: '0.75rem',
                   textWrap: 'balance' as never,

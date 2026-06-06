@@ -47,9 +47,14 @@ function StatItem({ stat, index, prefersReduced }: StatItemProps) {
   const spring = useSpring(motionCount, { stiffness: 60, damping: 20 });
   const displayMotion = useTransform(spring, format);
 
-  const [displayText, setDisplayText] = useState(() =>
-    prefersReduced ? format(stat.numericValue) : '0'
-  );
+  const [displayText, setDisplayText] = useState('0');
+
+  const formattedFinal =
+    stat.decimals !== undefined
+      ? stat.numericValue.toFixed(stat.decimals)
+      : String(Math.round(stat.numericValue));
+
+  const renderedText = prefersReduced ? formattedFinal : displayText;
 
   useMotionValueEvent(displayMotion, 'change', setDisplayText);
 
@@ -88,7 +93,7 @@ function StatItem({ stat, index, prefersReduced }: StatItemProps) {
       <span
         style={{
           display: 'block',
-          fontSize: 'clamp(3.5rem, 7vw, 6rem)',
+          fontSize: 'clamp(4.5rem, 9vw, 6rem)',
           fontWeight: 900,
           color: 'var(--color-ink)',
           lineHeight: 1,
@@ -97,7 +102,7 @@ function StatItem({ stat, index, prefersReduced }: StatItemProps) {
           fontVariantNumeric: 'tabular-nums',
         }}
       >
-        {displayText}
+        {renderedText}
         {stat.accentSuffix && (
           <span aria-hidden="true" style={{ color: 'var(--color-accent)' }}>
             {stat.accentSuffix}
@@ -127,8 +132,8 @@ export default function Stats() {
       aria-label="Estadísticas"
       style={{
         backgroundColor: 'var(--color-paper)',
-        paddingTop: 'clamp(3rem, 6vw, 5rem)',
-        paddingBottom: 'clamp(3rem, 6vw, 5rem)',
+        paddingTop: 'clamp(4rem, 8vw, 6rem)',
+        paddingBottom: 'clamp(4rem, 8vw, 6rem)',
         paddingLeft: 'clamp(1.5rem, 5vw, 6rem)',
         paddingRight: 'clamp(1.5rem, 5vw, 6rem)',
       }}

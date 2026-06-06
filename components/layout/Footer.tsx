@@ -139,7 +139,7 @@ export default function Footer() {
         <div
           aria-hidden="true"
           style={{
-            borderTop: '1px solid oklch(from var(--color-ink) l c h / 0.08)',
+            borderTop: '1px solid oklch(97.5% 0.005 90 / 0.08)',
             margin: '1.5rem 0 1rem 0',
           }}
         />
@@ -149,7 +149,6 @@ export default function Footer() {
             fontFamily: 'var(--font-body)',
             fontWeight: 400,
             fontSize: '0.7rem',
-            letterSpacing: '0.05em',
             color: 'oklch(97.5% 0.005 90 / 0.35)',
             margin: 0,
             padding: 0,

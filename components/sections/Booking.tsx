@@ -6,7 +6,7 @@ import {
   PHONE_DISPLAY,
   PHONE_TEL,
 } from '@/lib/constants';
-import { trackBookingOpen, trackWhatsappClick } from '@/lib/analytics';
+import { trackBookingOpen, trackWhatsappClick, trackCallClick } from '@/lib/analytics';
 import Magnetic from '@/components/ui/Magnetic';
 
 const SLOT_BORDER = '1px solid oklch(95% 0.01 75 / 0.12)';
@@ -33,7 +33,7 @@ export default function Booking() {
             textWrap: 'balance' as never,
           }}
         >
-          Agendá su consulta
+          Agende su consulta
         </h2>
 
         <p
@@ -88,14 +88,12 @@ export default function Booking() {
                 style={{
                   fontSize: '0.875rem',
                   fontWeight: 400,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.08em',
                   color: 'oklch(95% 0.01 75 / 0.55)',
                   maxWidth: '28ch',
                   lineHeight: 1.5,
                 }}
               >
-                Coordiná un turno directamente por WhatsApp
+                Coordine un turno directamente por WhatsApp
               </p>
               <Magnetic>
                 <a
@@ -116,9 +114,10 @@ export default function Booking() {
                   color: 'oklch(95% 0.01 75 / 0.72)',
                 }}
               >
-                También podés llamar al{' '}
+                También puede llamar al{' '}
                 <a
                   href={PHONE_TEL}
+                  onClick={trackCallClick}
                   className="booking-phone-link"
                   style={{ display: 'inline-flex', alignItems: 'center', minHeight: '2.75rem' }}
                 >

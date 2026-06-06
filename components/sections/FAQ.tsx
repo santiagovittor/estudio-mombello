@@ -136,6 +136,7 @@ export default function FAQ(_: FAQProps) {
                 key={faq.id}
                 style={{
                   borderTop: '1px solid oklch(9% 0.01 245 / 0.10)',
+                  paddingTop: '1.25rem',
                   ...(i === FAQS.length - 1
                     ? { borderBottom: '1px solid oklch(9% 0.01 245 / 0.10)' }
                     : {}),
@@ -155,7 +156,7 @@ export default function FAQ(_: FAQProps) {
                       background: 'none',
                       border: 'none',
                       cursor: 'pointer',
-                      padding: '1.375rem 0',
+                      padding: '0 0 1.375rem',
                       textAlign: 'left',
                       gap: '1.5rem',
                       color: 'var(--color-ink)',
@@ -173,8 +174,13 @@ export default function FAQ(_: FAQProps) {
                     >
                       {faq.question}
                     </span>
-                    <span
+                    <motion.span
                       aria-hidden="true"
+                      animate={{ rotate: isOpen ? 45 : 0 }}
+                      transition={{
+                        duration: prefersReduced ? 0 : 0.22,
+                        ease: EASE_OUT_QUART,
+                      }}
                       style={{
                         flexShrink: 0,
                         fontSize: '1.25rem',
@@ -184,10 +190,11 @@ export default function FAQ(_: FAQProps) {
                         userSelect: 'none',
                         width: '1.5rem',
                         textAlign: 'center',
+                        display: 'inline-block',
                       }}
                     >
-                      {isOpen ? '−' : '+'}
-                    </span>
+                      +
+                    </motion.span>
                   </button>
                 </dt>
                 <AnimatePresence initial={false}>
@@ -238,9 +245,9 @@ export default function FAQ(_: FAQProps) {
               rel="noopener noreferrer"
               onClick={trackWhatsappClick}
               className="hero-cta-primary"
-              aria-label="Consultar con Fabio Mombello por WhatsApp"
+              aria-label="Escribir a Fabio Mombello por WhatsApp"
             >
-              Consultar por WhatsApp
+              Escribir por WhatsApp
             </a>
           </Magnetic>
         </div>

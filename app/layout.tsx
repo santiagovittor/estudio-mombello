@@ -108,6 +108,7 @@ export default function RootLayout({
         ))}
       </head>
       <body>
+        <a href="#hero" className="skip-link">Saltar al contenido</a>
         <ScrollProgress />
         {children}
         {GA4_ID && process.env.NODE_ENV === 'production' && (

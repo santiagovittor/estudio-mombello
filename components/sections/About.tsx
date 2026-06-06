@@ -17,17 +17,17 @@ export default function About(_: AboutProps) {
       style={{
         backgroundColor: 'var(--color-paper)',
         paddingTop: 'clamp(4rem, 8vw, 7rem)',
-        paddingBottom: 'clamp(4rem, 8vw, 7rem)',
+        paddingBottom: 'clamp(2.5rem, 4vw, 4rem)',
         paddingLeft: 'clamp(1.5rem, 5vw, 6rem)',
         paddingRight: 'clamp(1.5rem, 5vw, 6rem)',
       }}
     >
       <div
-        className="grid lg:grid-cols-[55fr_45fr]"
+        className={PHOTO_AVAILABLE ? 'grid lg:grid-cols-[55fr_45fr]' : ''}
         style={{
           maxWidth: '90rem',
           margin: '0 auto',
-          gap: 'clamp(3rem, 6vw, 5rem)',
+          gap: PHOTO_AVAILABLE ? 'clamp(3rem, 6vw, 5rem)' : undefined,
           alignItems: 'start',
         }}
       >
@@ -37,9 +37,9 @@ export default function About(_: AboutProps) {
             id="about-heading"
             className="section-heading"
             style={{
-              fontSize: 'clamp(1.875rem, 4vw, 3rem)',
+              fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
               fontWeight: 900,
-              lineHeight: 1.1,
+              lineHeight: 1.05,
               color: 'var(--color-ink)',
               marginBottom: '1.5rem',
               textWrap: 'balance' as never,
@@ -50,12 +50,13 @@ export default function About(_: AboutProps) {
 
           <p
             style={{
-              fontSize: 'clamp(1rem, 1.5vw, 1.25rem)',
+              fontSize: 'clamp(1.125rem, 2vw, 1.5rem)',
               fontWeight: 500,
               color: 'var(--color-ink)',
               letterSpacing: '0.005em',
               lineHeight: 1.4,
               marginBottom: '2rem',
+              maxWidth: '65ch',
             }}
           >
             Abogado penalista, laboralista y especialista en derecho de familia.{' '}
@@ -120,17 +121,16 @@ export default function About(_: AboutProps) {
           </Magnetic>
         </div>
 
-        {/* Photo column */}
-        <div
-          style={{
-            position: 'relative',
-            aspectRatio: '3 / 4',
-            borderRadius: '0.25rem',
-            overflow: 'hidden',
-            backgroundColor: 'oklch(9% 0.01 245 / 0.07)',
-          }}
-        >
-          {PHOTO_AVAILABLE ? (
+        {/* Photo column — only rendered when photo is available */}
+        {PHOTO_AVAILABLE && (
+          <div
+            style={{
+              position: 'relative',
+              aspectRatio: '3 / 4',
+              borderRadius: '0.25rem',
+              overflow: 'hidden',
+            }}
+          >
             <Image
               src="/photos/fabio.jpg"
               alt="Dr. Fabio Mombello, abogado penalista, laboralista y especialista en derecho de familia en Buenos Aires"
@@ -138,8 +138,8 @@ export default function About(_: AboutProps) {
               style={{ objectFit: 'cover', objectPosition: 'center top' }}
               sizes="(max-width: 1024px) 100vw, 45vw"
             />
-          ) : null}
-        </div>
+          </div>
+        )}
       </div>
     </section>
   );

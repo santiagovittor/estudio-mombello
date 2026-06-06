@@ -10,7 +10,7 @@ export default function Credentials(_: CredentialsProps) {
       style={{
         backgroundColor: 'var(--color-paper)',
         paddingTop: 'clamp(4rem, 8vw, 7rem)',
-        paddingBottom: 'clamp(4rem, 8vw, 7rem)',
+        paddingBottom: 'clamp(2.5rem, 4vw, 4rem)',
         paddingLeft: 'clamp(1.5rem, 5vw, 6rem)',
         paddingRight: 'clamp(1.5rem, 5vw, 6rem)',
       }}
@@ -60,10 +60,10 @@ export default function Credentials(_: CredentialsProps) {
         />
 
         <div className="grid md:grid-cols-2" style={{ gap: '1.5rem' }}>
-          <p style={{ fontSize: '0.9rem', fontWeight: 400, color: 'oklch(9% 0.01 245 / 0.60)', lineHeight: 1.68, margin: 0 }}>
+          <p style={{ fontSize: '0.875rem', fontWeight: 400, color: 'oklch(9% 0.01 245 / 0.75)', lineHeight: 1.68, margin: 0, maxWidth: '62ch' }}>
             20 años de ejercicio profesional en el fuero penal, laboral y de familia en tribunales de Buenos Aires.
           </p>
-          <p style={{ fontSize: '0.9rem', fontWeight: 400, color: 'oklch(9% 0.01 245 / 0.60)', lineHeight: 1.68, margin: 0 }}>
+          <p style={{ fontSize: '0.875rem', fontWeight: 400, color: 'oklch(9% 0.01 245 / 0.75)', lineHeight: 1.68, margin: 0 }}>
             Matrícula profesional activa. Colegio Público de Abogados de la Capital Federal.
           </p>
         </div>
