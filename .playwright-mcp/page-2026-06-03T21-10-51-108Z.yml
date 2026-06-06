@@ -1,0 +1,14 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - paragraph [ref=e4]: Navbar
+    - paragraph [ref=e6]: Hero
+    - paragraph [ref=e8]: Stats
+    - paragraph [ref=e10]: About
+    - paragraph [ref=e12]: PracticeAreas
+    - paragraph [ref=e14]: Credentials
+    - paragraph [ref=e16]: Testimonials
+    - paragraph [ref=e18]: FAQ
+    - paragraph [ref=e20]: Booking
+    - paragraph [ref=e22]: Contact
+    - paragraph [ref=e24]: Footer
+  - alert [ref=e25]

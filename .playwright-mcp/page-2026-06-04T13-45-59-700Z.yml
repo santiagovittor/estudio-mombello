@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "Ir al inicio" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Dr. Mombello
+      - navigation "Navegación principal" [ref=e6]:
+        - link "Áreas" [ref=e7] [cursor=pointer]:
+          - /url: "#areas"
+        - link "Sobre Fabio" [ref=e8] [cursor=pointer]:
+          - /url: "#sobre-fabio"
+        - link "Contacto" [ref=e9] [cursor=pointer]:
+          - /url: "#contacto"
+      - link "Escribir por WhatsApp" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/5491152579927
+        - text: WhatsApp
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Buenos Aires · 20 años de experiencia
+      - heading "Su problema tiene solución." [level=1] [ref=e15]:
+        - text: Su problema
+        - text: tiene solución.
+      - paragraph [ref=e16]: Fabio Mombello · Abogado Penal, Laboral y Familia
+      - paragraph [ref=e17]:
+        - text: He resuelto este tipo de caso durante 20 años.
+        - text: Lo llamo hoy.
+      - generic [ref=e18]:
+        - link "Escribir a Fabio Mombello por WhatsApp" [ref=e19] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+        - link "Llamar a Fabio Mombello" [ref=e20] [cursor=pointer]:
+          - /url: tel:+5491152579927
+          - text: Llamar ahora
+    - region "Estadísticas" [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: "20"
+          - generic [ref=e27]: Años de experiencia
+        - generic [ref=e28]:
+          - generic [ref=e29]: "3"
+          - generic [ref=e30]: Áreas de práctica
+        - generic [ref=e31]:
+          - generic [ref=e32]: 4.5★
+          - generic [ref=e33]: Promedio en Google
+        - generic [ref=e34]:
+          - generic [ref=e35]: "88"
+          - generic [ref=e36]: Opiniones de clientes
+    - region "Sobre Fabio" [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - heading "Sobre Fabio" [level=2] [ref=e40]
+          - paragraph [ref=e41]: Abogado penalista, laboralista y especialista en derecho de familia. 20 años de ejercicio en Buenos Aires.
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: "Fabio entiende que detrás de cada expediente hay una persona esperando respuestas concretas. Desde la primera consulta trabaja directamente con usted: escucha su situación, evalúa las opciones reales y traza un camino claro."
+            - paragraph [ref=e44]: Su estudio no deriva expedientes. Fabio lleva su caso de principio a fin.
+          - link "Escribir a Fabio Mombello por WhatsApp" [ref=e46] [cursor=pointer]:
+            - /url: https://wa.me/5491152579927
+            - text: Escribir por WhatsApp
+        - generic [ref=e49]: Foto pendiente
+    - region "Áreas de práctica" [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Áreas de práctica" [level=2] [ref=e52]
+        - paragraph [ref=e53]: Trabajo en penal, laboral y familia. Cuénteme su caso.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - heading "Derecho Penal" [level=3] [ref=e56]
+            - paragraph [ref=e57]: Defiendo su caso desde la primera audiencia.
+            - list "Casos de Derecho Penal" [ref=e58]:
+              - listitem [ref=e59]: Causas penales federales y provinciales
+              - listitem [ref=e60]: Defensa en flagrancia en Buenos Aires
+              - listitem [ref=e61]: Excarcelaciones y exenciones de prisión
+              - listitem [ref=e62]: Delitos económicos y financieros
+              - listitem [ref=e63]: Violencia de género
+          - generic [ref=e64]:
+            - heading "Derecho Laboral" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Conozco cada recurso para proteger su trabajo.
+            - list "Casos de Derecho Laboral" [ref=e67]:
+              - listitem [ref=e68]: Despidos injustificados y liquidaciones
+              - listitem [ref=e69]: Accidentes de trabajo en Buenos Aires
+              - listitem [ref=e70]: Acoso laboral y ambiente hostil
+              - listitem [ref=e71]: Convenios colectivos y negociaciones
+              - listitem [ref=e72]: Reclamos ante el SECLO y la Justicia
+          - generic [ref=e73]:
+            - heading "Derecho de Familia" [level=3] [ref=e74]
+            - paragraph [ref=e75]: Acompaño su proceso con claridad y firmeza.
+            - list "Casos de Derecho de Familia" [ref=e76]:
+              - listitem [ref=e77]: Divorcios y separaciones en Buenos Aires
+              - listitem [ref=e78]: Cuota alimentaria y régimen de visitas
+              - listitem [ref=e79]: Tenencia y custodia de hijos
+              - listitem [ref=e80]: Violencia doméstica y medidas de protección
+              - listitem [ref=e81]: Sucesiones y herencias
+        - link "Escribir a Fabio Mombello por WhatsApp para consultar sobre sus áreas de práctica" [ref=e83] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+    - region "Formación y matrícula" [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "Formación y matrícula" [level=2] [ref=e87]
+          - paragraph [ref=e88]: 20 años de ejercicio ininterrumpido en Buenos Aires. Penal, laboral y familia ante los tribunales nacionales y federales.
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - term [ref=e91]: Formación académica
+            - definition [ref=e92]:
+              - list "Formación académica" [ref=e93]:
+                - listitem [ref=e94]: Abogado, Facultad de Derecho, Universidad de Buenos Aires (2004)
+                - listitem [ref=e95]: Especialización en Derecho Penal, Facultad de Derecho, UBA (2006)
+                - listitem [ref=e96]: Posgrado en Derecho Laboral y Relaciones del Trabajo, Universidad Austral (2009)
+          - generic [ref=e97]:
+            - term [ref=e98]: Matrícula profesional
+            - definition [ref=e99]:
+              - list "Matrícula profesional" [ref=e100]:
+                - listitem [ref=e101]: Colegio Público de Abogados de la Capital Federal (CPACF)
+                - listitem [ref=e102]: Habilitado para actuar ante tribunales nacionales y federales
+          - generic [ref=e103]:
+            - term [ref=e104]: Jurisdicción
+            - definition [ref=e105]:
+              - list "Jurisdicción" [ref=e106]:
+                - listitem [ref=e107]: Justicia Nacional en lo Criminal y Correccional, CABA
+                - listitem [ref=e108]: Justicia Nacional del Trabajo, CABA
+                - listitem [ref=e109]: Justicia Civil, Comercial y de Familia, CABA
+                - listitem [ref=e110]: Cámara Nacional de Apelaciones en todas las materias
+    - paragraph [ref=e113]: Testimonials
+    - paragraph [ref=e115]: FAQ
+    - paragraph [ref=e117]: Booking
+    - paragraph [ref=e119]: Contact
+    - paragraph [ref=e121]: Footer
+  - button "Open Next.js Dev Tools" [ref=e127] [cursor=pointer]:
+    - img [ref=e128]

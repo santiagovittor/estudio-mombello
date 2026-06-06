@@ -1,0 +1,277 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "Ir al inicio" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Fabio Mombello y Asociados" [ref=e6]
+      - link "Escribir por WhatsApp" [ref=e7] [cursor=pointer]:
+        - /url: https://wa.me/5491152579927
+        - text: WhatsApp
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: Buenos Aires · 20 años de experiencia
+      - heading "Su problema tiene solución." [level=1] [ref=e12]:
+        - generic [ref=e14]: Su problema
+        - generic [ref=e16]: tiene solución.
+      - paragraph [ref=e17]: Fabio Mombello · Abogado Penal, Laboral y Familia
+      - paragraph [ref=e18]:
+        - text: He resuelto este tipo de caso durante 20 años.
+        - text: Lo llamo hoy.
+      - generic [ref=e19]:
+        - link "Escribir a Fabio Mombello por WhatsApp" [ref=e20] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+        - link "Llamar a Fabio Mombello" [ref=e21] [cursor=pointer]:
+          - /url: tel:+5491152579927
+          - text: Llamar ahora
+    - generic [ref=e24]: Penal · Laboral · Familia · 20 años de práctica · Buenos Aires · Penal · Laboral · Familia · 20 años de práctica · Buenos Aires ·
+    - region "Estadísticas" [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: "0"
+          - generic [ref=e30]: Años de experiencia
+        - generic [ref=e31]:
+          - generic [ref=e32]: "0"
+          - generic [ref=e33]: Áreas de práctica
+        - generic [ref=e34]:
+          - generic [ref=e35]: 0★
+          - generic [ref=e36]: Promedio en Google
+        - generic [ref=e37]:
+          - generic [ref=e38]: "0"
+          - generic [ref=e39]: Opiniones de clientes
+    - region "Sobre Fabio" [ref=e40]:
+      - generic [ref=e42]:
+        - heading "Sobre Fabio" [level=2] [ref=e43]
+        - paragraph [ref=e44]: Abogado penalista, laboralista y especialista en derecho de familia. 20 años de ejercicio en Buenos Aires.
+        - generic [ref=e45]:
+          - paragraph [ref=e46]:
+            - generic [ref=e47]: Fabio entiende que detrás de cada expediente hay una persona esperando respuestas concretas.
+            - generic [ref=e48]: "Desde la primera consulta trabaja directamente con usted: escucha su situación, evalúa las opciones reales y traza un camino claro."
+          - paragraph [ref=e49]:
+            - generic [ref=e50]: Su estudio no deriva expedientes.
+            - generic [ref=e51]: Fabio lleva su caso de principio a fin.
+        - link "Escribir a Fabio Mombello por WhatsApp" [ref=e52] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+    - region "Áreas de práctica" [ref=e54]:
+      - generic [ref=e55]:
+        - heading "Áreas de práctica" [level=2] [ref=e56]
+        - paragraph [ref=e57]:
+          - generic [ref=e58]: Trabajo en penal, laboral y familia.
+          - generic [ref=e59]: Cuénteme su caso.
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - heading "Derecho Penal" [level=3] [ref=e62]
+            - paragraph [ref=e63]:
+              - generic [ref=e64]: Defiendo su caso desde la primera audiencia.
+            - list "Casos de Derecho Penal" [ref=e65]:
+              - listitem [ref=e66]: Causas penales federales y provinciales
+              - listitem [ref=e67]: Defensa en flagrancia en Buenos Aires
+              - listitem [ref=e68]: Excarcelaciones y exenciones de prisión
+              - listitem [ref=e69]: Delitos económicos y financieros
+              - listitem [ref=e70]: Violencia de género
+          - generic [ref=e71]:
+            - heading "Derecho Laboral" [level=3] [ref=e72]
+            - paragraph [ref=e73]:
+              - generic [ref=e74]: Conozco cada recurso para proteger su trabajo.
+            - list "Casos de Derecho Laboral" [ref=e75]:
+              - listitem [ref=e76]: Despidos injustificados y liquidaciones
+              - listitem [ref=e77]: Accidentes de trabajo en Buenos Aires
+              - listitem [ref=e78]: Acoso laboral y ambiente hostil
+              - listitem [ref=e79]: Convenios colectivos y negociaciones
+              - listitem [ref=e80]: Reclamos ante el SECLO y la Justicia
+          - generic [ref=e81]:
+            - heading "Derecho de Familia" [level=3] [ref=e82]
+            - paragraph [ref=e83]:
+              - generic [ref=e84]: Acompaño su proceso con claridad y firmeza.
+            - list "Casos de Derecho de Familia" [ref=e85]:
+              - listitem [ref=e86]: Divorcios y separaciones en Buenos Aires
+              - listitem [ref=e87]: Cuota alimentaria y régimen de visitas
+              - listitem [ref=e88]: Tenencia y custodia de hijos
+              - listitem [ref=e89]: Violencia doméstica y medidas de protección
+              - listitem [ref=e90]: Sucesiones y herencias
+        - link "Escribir a Fabio Mombello por WhatsApp para consultar sobre sus áreas de práctica" [ref=e92] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+    - region "Formación y trayectoria" [ref=e93]:
+      - generic [ref=e94]:
+        - heading "Formación y trayectoria" [level=2] [ref=e95]
+        - paragraph [ref=e96]: Dr. Fabio Mombello se formó en la Universidad Abierta Interamericana, una de las instituciones jurídicas de referencia en Buenos Aires.
+        - img "Universidad Abierta Interamericana" [ref=e97]
+        - generic [ref=e99]:
+          - paragraph [ref=e100]: 20 años de ejercicio profesional en el fuero penal, laboral y de familia en tribunales de Buenos Aires.
+          - paragraph [ref=e101]: Matrícula profesional activa. Colegio Público de Abogados de la Capital Federal.
+    - region "Lo que dicen sus clientes" [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - heading "Lo que dicen sus clientes" [level=2] [ref=e105]
+          - paragraph [ref=e106]:
+            - generic [ref=e107]: ★
+            - generic [ref=e108]: 4.5 · 88 opiniones en Google
+        - generic "Reseñas de clientes" [ref=e109]:
+          - generic [ref=e110]:
+            - group "Opinión de Emilse Negretti" [ref=e111]:
+              - img "5 de 5 estrellas" [ref=e112]: ★★★★★
+              - paragraph [ref=e113]: Exelente abogado muy humano y correcto super recomendable y confiable
+              - generic [ref=e114]:
+                - generic [ref=e115]: Emilse Negretti
+                - generic [ref=e116]: Google · diciembre 2025
+            - group "Opinión de Gonzalo Pereyra" [ref=e117]:
+              - img "5 de 5 estrellas" [ref=e118]: ★★★★★
+              - paragraph [ref=e119]: Excelente predisposición en todo momento, brindando apoyo y seguridad en la resolución del caso. Es destacable su calidad humana, su entusiasmo y pasión por lo que hace. Muy agradecido como siempre.
+              - generic [ref=e120]:
+                - generic [ref=e121]: Gonzalo Pereyra
+                - generic [ref=e122]: Google · junio 2024
+            - group "Opinión de Natalia Alonso" [ref=e123]:
+              - img "5 de 5 estrellas" [ref=e124]: ★★★★★
+              - paragraph [ref=e125]: Muy claro y muy humano... cumplió con su trabajo en tiempo y forma. Un excelente abogado.
+              - generic [ref=e126]:
+                - generic [ref=e127]: Natalia Alonso
+                - generic [ref=e128]: Google · enero 2025
+            - group "Opinión de Mailien Smit" [ref=e129]:
+              - img "5 de 5 estrellas" [ref=e130]: ★★★★★
+              - paragraph [ref=e131]: Muy buen abogado, conmigo fue sincero y directo. Enseguida se puso a trabajar en mi caso. Muy recomendable.
+              - generic [ref=e132]:
+                - generic [ref=e133]: Mailien Smit
+                - generic [ref=e134]: Google · agosto 2022
+            - group "Opinión de Luciano Villa" [ref=e135]:
+              - img "5 de 5 estrellas" [ref=e136]: ★★★★★
+              - paragraph [ref=e137]: Eficiencia y transparencia, una grata experiencia con el Dr Mombello , acompaño mi caso de cerca y con muy buena predisposición. Lo recomiendo!
+              - generic [ref=e138]:
+                - generic [ref=e139]: Luciano Villa
+                - generic [ref=e140]: Google · diciembre 2024
+            - group "Opinión de Giovanna Gonzalez Noa" [ref=e141]:
+              - img "5 de 5 estrellas" [ref=e142]: ★★★★★
+              - paragraph [ref=e143]: Excelente atención, concretó y directo, no duden!
+              - generic [ref=e144]:
+                - generic [ref=e145]: Giovanna Gonzalez Noa
+                - generic [ref=e146]: Google · febrero 2025
+            - group "Opinión de Mario Roberto Moreno" [ref=e147]:
+              - img "5 de 5 estrellas" [ref=e148]: ★★★★★
+              - paragraph [ref=e149]: El mejor ABOGADO de Gral. Pacheco. Sin lugar a dudas. Directo, concreto, sin verso.
+              - generic [ref=e150]:
+                - generic [ref=e151]: Mario Roberto Moreno
+                - generic [ref=e152]: Google · febrero 2026
+            - group "Opinión de Miguel Angel Troilo" [ref=e153]:
+              - img "5 de 5 estrellas" [ref=e154]: ★★★★★
+              - paragraph [ref=e155]: Por lejos el mejor abogado de Pacheco. Un capo. Me salvo...!!!
+              - generic [ref=e156]:
+                - generic [ref=e157]: Miguel Angel Troilo
+                - generic [ref=e158]: Google · junio 2025
+    - region "Preguntas frecuentes" [ref=e159]:
+      - generic [ref=e160]:
+        - heading "Preguntas frecuentes" [level=2] [ref=e161]
+        - paragraph [ref=e162]: Las dudas más frecuentes antes de la primera consulta.
+        - generic [ref=e163]:
+          - term [ref=e165]:
+            - button "Recibí una citación de la fiscalía o la policía. ¿Qué hago primero?" [ref=e166] [cursor=pointer]:
+              - generic [ref=e167]: Recibí una citación de la fiscalía o la policía. ¿Qué hago primero?
+              - generic [ref=e168]: +
+          - term [ref=e170]:
+            - button "¿Estoy obligado a declarar si me detienen o me citan como imputado?" [ref=e171] [cursor=pointer]:
+              - generic [ref=e172]: ¿Estoy obligado a declarar si me detienen o me citan como imputado?
+              - generic [ref=e173]: +
+          - term [ref=e175]:
+            - button "Me despidieron sin causa. ¿Vale la pena iniciar un reclamo?" [ref=e176] [cursor=pointer]:
+              - generic [ref=e177]: Me despidieron sin causa. ¿Vale la pena iniciar un reclamo?
+              - generic [ref=e178]: +
+          - term [ref=e180]:
+            - button "¿Qué pasa en la primera consulta?" [ref=e181] [cursor=pointer]:
+              - generic [ref=e182]: ¿Qué pasa en la primera consulta?
+              - generic [ref=e183]: +
+          - term [ref=e185]:
+            - button "¿Cómo son los honorarios?" [ref=e186] [cursor=pointer]:
+              - generic [ref=e187]: ¿Cómo son los honorarios?
+              - generic [ref=e188]: +
+          - term [ref=e190]:
+            - button "¿Cuánto tiempo tarda un caso como el mío?" [ref=e191] [cursor=pointer]:
+              - generic [ref=e192]: ¿Cuánto tiempo tarda un caso como el mío?
+              - generic [ref=e193]: +
+          - term [ref=e195]:
+            - button "¿Puedo hacer la consulta de forma remota?" [ref=e196] [cursor=pointer]:
+              - generic [ref=e197]: ¿Puedo hacer la consulta de forma remota?
+              - generic [ref=e198]: +
+          - term [ref=e200]:
+            - button "¿Tiene experiencia en los tribunales de Buenos Aires?" [ref=e201] [cursor=pointer]:
+              - generic [ref=e202]: ¿Tiene experiencia en los tribunales de Buenos Aires?
+              - generic [ref=e203]: +
+        - link "Consultar con Fabio Mombello por WhatsApp" [ref=e205] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Consultar por WhatsApp
+    - generic [ref=e207]:
+      - heading "Agendá su consulta" [level=2] [ref=e208]
+      - paragraph [ref=e209]: Sin compromiso. En la primera consulta analizo su caso y le digo qué caminos existen.
+      - generic [ref=e211]:
+        - paragraph [ref=e212]: Coordiná un turno directamente por WhatsApp
+        - link "Escribir a Fabio Mombello por WhatsApp para coordinar un turno (se abre en nueva pestaña)" [ref=e213] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+        - paragraph [ref=e214]:
+          - text: También podés llamar al
+          - link "011 5257-9927" [ref=e215] [cursor=pointer]:
+            - /url: tel:+5491152579927
+    - region "Consulte con Fabio" [ref=e216]:
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - heading "Consulte con Fabio" [level=2] [ref=e219]
+          - paragraph [ref=e220]: Atiende personalmente cada consulta. Cuéntele su situación y recibirá una respuesta concreta, sin intermediarios.
+          - generic [ref=e221]:
+            - link "Escribir a Fabio Mombello por WhatsApp" [ref=e222] [cursor=pointer]:
+              - /url: https://wa.me/5491152579927
+              - text: Escribir por WhatsApp
+            - paragraph [ref=e223]:
+              - text: O llame al
+              - link "Llamar a Fabio Mombello al 011 5257-9927" [ref=e224] [cursor=pointer]:
+                - /url: tel:+5491152579927
+                - text: 011 5257-9927
+          - form "Formulario de contacto" [ref=e225]:
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e228]: Su nombre
+                - textbox "Su nombre" [ref=e229]:
+                  - /placeholder: Nombre y apellido
+              - generic [ref=e230]:
+                - generic [ref=e231]: Teléfono o email
+                - textbox "Teléfono o email" [ref=e232]:
+                  - /placeholder: 11 1234-5678 o nombre@correo.com
+              - generic [ref=e233]:
+                - generic [ref=e234]: Su situación
+                - textbox "Su situación" [ref=e235]:
+                  - /placeholder: Cuéntenos brevemente su caso
+            - button "Enviar consulta" [ref=e236]
+          - generic [ref=e237]:
+            - generic [ref=e238]: Estudio Jurídico Dr. Mombello y Asoc.
+            - generic [ref=e239]: Guayaquil 390, B1617 Gral. Pacheco, Provincia de Buenos Aires
+            - link "Llamar a Fabio Mombello al 011 5257-9927" [ref=e240] [cursor=pointer]:
+              - /url: tel:+5491152579927
+              - text: 011 5257-9927
+        - iframe [ref=e242]
+    - generic [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - img "Fabio Mombello y Asociados" [ref=e247]
+          - generic [ref=e248]: Abogado Penal · Laboral · Familia
+        - navigation "Navegación del pie de página" [ref=e249]:
+          - link "Áreas de práctica" [ref=e250] [cursor=pointer]:
+            - /url: "#areas"
+          - link "Sobre Fabio" [ref=e251] [cursor=pointer]:
+            - /url: "#sobre-fabio"
+          - link "Agendar consulta" [ref=e252] [cursor=pointer]:
+            - /url: "#turnos"
+          - link "Contacto" [ref=e253] [cursor=pointer]:
+            - /url: "#contacto"
+        - link "Instagram @abogadofabiomombello (se abre en nueva pestaña)" [ref=e255] [cursor=pointer]:
+          - /url: https://instagram.com/abogadofabiomombello
+          - img [ref=e256]
+          - text: "@abogadofabiomombello"
+      - generic [ref=e261]:
+        - paragraph [ref=e262]: © 2026 Fabio Mombello y Asociados. Todos los derechos reservados.
+        - paragraph [ref=e263]: Guayaquil 390, B1617 Gral. Pacheco, Provincia de Buenos Aires
+    - generic:
+      - link "Escribir por WhatsApp (se abre en nueva pestaña)":
+        - /url: https://wa.me/5491152579927
+        - img
+    - link "Llamar a Fabio Mombello" [ref=e264] [cursor=pointer]:
+      - /url: tel:+5491152579927
+      - img [ref=e265]
+  - button "Open Next.js Dev Tools" [ref=e272] [cursor=pointer]:
+    - img [ref=e273]

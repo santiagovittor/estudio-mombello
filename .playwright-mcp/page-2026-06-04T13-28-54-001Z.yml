@@ -1,0 +1,61 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "Ir al inicio" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Dr. Mombello
+      - link "Escribir por WhatsApp" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/5491152579927
+        - text: WhatsApp
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Buenos Aires · 20 años de experiencia
+      - heading "Su problema tiene solución." [level=1] [ref=e15]:
+        - text: Su problema
+        - text: tiene solución.
+      - paragraph [ref=e16]: Fabio Mombello · Abogado Penal, Laboral y Familia
+      - paragraph [ref=e17]:
+        - text: He resuelto este tipo de caso durante 20 años.
+        - text: Lo llamo hoy.
+      - generic [ref=e18]:
+        - link "Escribir a Fabio Mombello por WhatsApp" [ref=e19] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+        - link "Llamar a Fabio Mombello" [ref=e20] [cursor=pointer]:
+          - /url: tel:+5491152579927
+          - text: Llamar ahora
+    - region "Estadísticas" [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: "20"
+          - generic [ref=e27]: Años de experiencia
+        - generic [ref=e28]:
+          - generic [ref=e29]: "3"
+          - generic [ref=e30]: Áreas de práctica
+        - generic [ref=e31]:
+          - generic [ref=e32]: 4.5★
+          - generic [ref=e33]: Promedio en Google
+        - generic [ref=e34]:
+          - generic [ref=e35]: "88"
+          - generic [ref=e36]: Opiniones de clientes
+    - region "Sobre Fabio" [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - heading "Sobre Fabio" [level=2] [ref=e40]
+          - paragraph [ref=e41]: Abogado penalista, laboralista y especialista en derecho de familia. 20 años de ejercicio en Buenos Aires.
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: "Fabio entiende que detrás de cada expediente hay una persona esperando respuestas concretas. Desde la primera consulta trabaja directamente con usted: escucha su situación, evalúa las opciones reales y traza un camino claro."
+            - paragraph [ref=e44]: Su estudio no deriva expedientes. Fabio lleva su caso de principio a fin.
+          - link "Escribir a Fabio Mombello por WhatsApp" [ref=e46] [cursor=pointer]:
+            - /url: https://wa.me/5491152579927
+            - text: Escribir por WhatsApp
+        - generic [ref=e49]: Foto pendiente
+    - paragraph [ref=e51]: PracticeAreas
+    - paragraph [ref=e53]: Credentials
+    - paragraph [ref=e55]: Testimonials
+    - paragraph [ref=e57]: FAQ
+    - paragraph [ref=e59]: Booking
+    - paragraph [ref=e61]: Contact
+    - paragraph [ref=e63]: Footer
+  - button "Open Next.js Dev Tools" [ref=e69] [cursor=pointer]:
+    - img [ref=e70]
+  - alert [ref=e73]

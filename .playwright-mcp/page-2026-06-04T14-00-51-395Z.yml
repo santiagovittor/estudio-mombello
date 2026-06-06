@@ -1,0 +1,163 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "Ir al inicio" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: Dr. Mombello
+      - link "Escribir por WhatsApp" [ref=e6] [cursor=pointer]:
+        - /url: https://wa.me/5491152579927
+        - text: WhatsApp
+    - generic [ref=e9]:
+      - paragraph [ref=e10]: Buenos Aires · 20 años de experiencia
+      - heading "Su problema tiene solución." [level=1] [ref=e11]:
+        - text: Su problema
+        - text: tiene solución.
+      - paragraph [ref=e12]: Fabio Mombello · Abogado Penal, Laboral y Familia
+      - paragraph [ref=e13]:
+        - text: He resuelto este tipo de caso durante 20 años.
+        - text: Lo llamo hoy.
+      - generic [ref=e14]:
+        - link "Escribir a Fabio Mombello por WhatsApp" [ref=e15] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+        - link "Llamar a Fabio Mombello" [ref=e16] [cursor=pointer]:
+          - /url: tel:+5491152579927
+          - text: Llamar ahora
+    - region "Estadísticas" [ref=e18]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: "20"
+          - generic [ref=e23]: Años de experiencia
+        - generic [ref=e24]:
+          - generic [ref=e25]: "3"
+          - generic [ref=e26]: Áreas de práctica
+        - generic [ref=e27]:
+          - generic [ref=e28]: 4.5★
+          - generic [ref=e29]: Promedio en Google
+        - generic [ref=e30]:
+          - generic [ref=e31]: "88"
+          - generic [ref=e32]: Opiniones de clientes
+    - region "Sobre Fabio" [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - heading "Sobre Fabio" [level=2] [ref=e36]
+          - paragraph [ref=e37]: Abogado penalista, laboralista y especialista en derecho de familia. 20 años de ejercicio en Buenos Aires.
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: "Fabio entiende que detrás de cada expediente hay una persona esperando respuestas concretas. Desde la primera consulta trabaja directamente con usted: escucha su situación, evalúa las opciones reales y traza un camino claro."
+            - paragraph [ref=e40]: Su estudio no deriva expedientes. Fabio lleva su caso de principio a fin.
+          - link "Escribir a Fabio Mombello por WhatsApp" [ref=e42] [cursor=pointer]:
+            - /url: https://wa.me/5491152579927
+            - text: Escribir por WhatsApp
+        - generic [ref=e45]: Foto pendiente
+    - region "Áreas de práctica" [ref=e46]:
+      - generic [ref=e47]:
+        - heading "Áreas de práctica" [level=2] [ref=e48]
+        - paragraph [ref=e49]: Trabajo en penal, laboral y familia. Cuénteme su caso.
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - heading "Derecho Penal" [level=3] [ref=e52]
+            - paragraph [ref=e53]: Defiendo su caso desde la primera audiencia.
+            - list "Casos de Derecho Penal" [ref=e54]:
+              - listitem [ref=e55]: Causas penales federales y provinciales
+              - listitem [ref=e56]: Defensa en flagrancia en Buenos Aires
+              - listitem [ref=e57]: Excarcelaciones y exenciones de prisión
+              - listitem [ref=e58]: Delitos económicos y financieros
+              - listitem [ref=e59]: Violencia de género
+          - generic [ref=e60]:
+            - heading "Derecho Laboral" [level=3] [ref=e61]
+            - paragraph [ref=e62]: Conozco cada recurso para proteger su trabajo.
+            - list "Casos de Derecho Laboral" [ref=e63]:
+              - listitem [ref=e64]: Despidos injustificados y liquidaciones
+              - listitem [ref=e65]: Accidentes de trabajo en Buenos Aires
+              - listitem [ref=e66]: Acoso laboral y ambiente hostil
+              - listitem [ref=e67]: Convenios colectivos y negociaciones
+              - listitem [ref=e68]: Reclamos ante el SECLO y la Justicia
+          - generic [ref=e69]:
+            - heading "Derecho de Familia" [level=3] [ref=e70]
+            - paragraph [ref=e71]: Acompaño su proceso con claridad y firmeza.
+            - list "Casos de Derecho de Familia" [ref=e72]:
+              - listitem [ref=e73]: Divorcios y separaciones en Buenos Aires
+              - listitem [ref=e74]: Cuota alimentaria y régimen de visitas
+              - listitem [ref=e75]: Tenencia y custodia de hijos
+              - listitem [ref=e76]: Violencia doméstica y medidas de protección
+              - listitem [ref=e77]: Sucesiones y herencias
+        - link "Escribir a Fabio Mombello por WhatsApp para consultar sobre sus áreas de práctica" [ref=e79] [cursor=pointer]:
+          - /url: https://wa.me/5491152579927
+          - text: Escribir por WhatsApp
+    - region "Formación y matrícula" [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - heading "Formación y matrícula" [level=2] [ref=e83]
+          - paragraph [ref=e84]: 20 años de ejercicio ininterrumpido en Buenos Aires. Penal, laboral y familia ante los tribunales nacionales y federales.
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - term [ref=e87]: Formación académica
+            - definition [ref=e88]:
+              - list "Formación académica" [ref=e89]:
+                - listitem [ref=e90]: Abogado, Facultad de Derecho, Universidad de Buenos Aires (2004)
+                - listitem [ref=e91]: Especialización en Derecho Penal, Facultad de Derecho, UBA (2006)
+                - listitem [ref=e92]: Posgrado en Derecho Laboral y Relaciones del Trabajo, Universidad Austral (2009)
+          - generic [ref=e93]:
+            - term [ref=e94]: Matrícula profesional
+            - definition [ref=e95]:
+              - list "Matrícula profesional" [ref=e96]:
+                - listitem [ref=e97]: Colegio Público de Abogados de la Capital Federal (CPACF)
+                - listitem [ref=e98]: Habilitado para actuar ante tribunales nacionales y federales
+          - generic [ref=e99]:
+            - term [ref=e100]: Jurisdicción
+            - definition [ref=e101]:
+              - list "Jurisdicción" [ref=e102]:
+                - listitem [ref=e103]: Justicia Nacional en lo Criminal y Correccional, CABA
+                - listitem [ref=e104]: Justicia Nacional del Trabajo, CABA
+                - listitem [ref=e105]: Justicia Civil, Comercial y de Familia, CABA
+                - listitem [ref=e106]: Cámara Nacional de Apelaciones en todas las materias
+    - region "Lo que dicen sus clientes" [ref=e108]:
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - heading "Lo que dicen sus clientes" [level=2] [ref=e111]
+          - paragraph [ref=e112]:
+            - generic [ref=e113]: ★
+            - generic [ref=e114]: 4.5 · 88 opiniones en Google
+        - generic [ref=e115]:
+          - article "Opinión de Marcela R." [ref=e116]:
+            - img "5 de 5 estrellas" [ref=e117]: ★★★★★
+            - paragraph [ref=e118]: Estaba enfrentando una acusación que no entendía y no sabía a quién recurrir. Fabio tomó el caso, explicó cada paso con claridad y logró un resultado que nunca creí posible. Le estoy profundamente agradecida.
+            - generic [ref=e119]:
+              - generic [ref=e120]: Marcela R.
+              - generic [ref=e121]: Google · noviembre 2024
+          - article "Opinión de Sebastián G." [ref=e122]:
+            - img "5 de 5 estrellas" [ref=e123]: ★★★★★
+            - paragraph [ref=e124]: Me despidieron con causa y sin aviso. Fabio analizó el contrato, identificó los errores del empleador y negoció una indemnización justa. Rápido, directo y efectivo.
+            - generic [ref=e125]:
+              - generic [ref=e126]: Sebastián G.
+              - generic [ref=e127]: Google · septiembre 2024
+          - article "Opinión de Carolina F." [ref=e128]:
+            - img "5 de 5 estrellas" [ref=e129]: ★★★★★
+            - paragraph [ref=e130]: El proceso de divorcio fue duro, pero Fabio supo manejar los tiempos sin perder el foco en lo legal. Protegió lo que importaba. Buen profesional, de los que ya no abundan.
+            - generic [ref=e131]:
+              - generic [ref=e132]: Carolina F.
+              - generic [ref=e133]: Google · enero 2025
+          - article "Opinión de Roberto M." [ref=e134]:
+            - img "5 de 5 estrellas" [ref=e135]: ★★★★★
+            - paragraph [ref=e136]: Me llamaron a declarar y entré en pánico. Un amigo me dio el número de Fabio. Ese mismo día me explicó qué hacer y qué no decir. Con su orientación salí adelante sin consecuencias graves.
+            - generic [ref=e137]:
+              - generic [ref=e138]: Roberto M.
+              - generic [ref=e139]: Google · agosto 2024
+          - article "Opinión de Valentina P." [ref=e140]:
+            - img "5 de 5 estrellas" [ref=e141]: ★★★★★
+            - paragraph [ref=e142]: La disputa de custodia fue larga y desgastante, pero Fabio nunca bajó los brazos. Cada vez que aparecía un obstáculo, él tenía una respuesta clara. El resultado fue lo mejor para mis hijos.
+            - generic [ref=e143]:
+              - generic [ref=e144]: Valentina P.
+              - generic [ref=e145]: Google · diciembre 2024
+          - article "Opinión de Ignacio T." [ref=e146]:
+            - img "4 de 5 estrellas" [ref=e147]: ★★★★★
+            - paragraph [ref=e148]: Fui a consultar sin saber si tenía caso. Fabio revisó todo, fue honesto sobre las posibilidades y decidimos avanzar. Ganamos en sede laboral. Lo recomiendo a quien enfrente problemas con su empleador.
+            - generic [ref=e149]:
+              - generic [ref=e150]: Ignacio T.
+              - generic [ref=e151]: Google · febrero 2025
+    - paragraph [ref=e153]: FAQ
+    - paragraph [ref=e155]: Booking
+    - paragraph [ref=e157]: Contact
+    - paragraph [ref=e159]: Footer
+  - button "Open Next.js Dev Tools" [ref=e165] [cursor=pointer]:
+    - img [ref=e166]

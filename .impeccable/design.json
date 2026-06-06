@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-03T21:30:00Z",
+  "title": "Design System: Estudio Mombello",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Late Night Ink",
+        "canonical": "oklch(9% 0.01 245)",
+        "tonalRamp": [
+          "oklch(5% 0.01 245)",
+          "oklch(15% 0.01 245)",
+          "oklch(25% 0.01 245)",
+          "oklch(35% 0.01 245)",
+          "oklch(45% 0.01 245)",
+          "oklch(60% 0.01 245)",
+          "oklch(75% 0.01 245)",
+          "oklch(90% 0.005 245)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Document White",
+        "canonical": "oklch(97.5% 0.005 90)",
+        "tonalRamp": [
+          "oklch(15% 0.005 90)",
+          "oklch(30% 0.005 90)",
+          "oklch(45% 0.005 90)",
+          "oklch(60% 0.005 90)",
+          "oklch(72% 0.005 90)",
+          "oklch(83% 0.005 90)",
+          "oklch(92% 0.005 90)",
+          "oklch(97.5% 0.005 90)"
+        ]
+      },
+      "hero-bg": {
+        "role": "neutral",
+        "displayName": "Chamber Dark",
+        "canonical": "oklch(11% 0.012 245)",
+        "tonalRamp": [
+          "oklch(5% 0.012 245)",
+          "oklch(11% 0.012 245)",
+          "oklch(20% 0.012 245)",
+          "oklch(30% 0.012 245)",
+          "oklch(42% 0.012 245)",
+          "oklch(58% 0.012 245)",
+          "oklch(73% 0.008 245)",
+          "oklch(88% 0.005 245)"
+        ]
+      },
+      "hero-text": {
+        "role": "neutral",
+        "displayName": "Hero White",
+        "canonical": "oklch(95% 0.01 75)",
+        "tonalRamp": [
+          "oklch(12% 0.01 75)",
+          "oklch(25% 0.01 75)",
+          "oklch(40% 0.01 75)",
+          "oklch(55% 0.01 75)",
+          "oklch(68% 0.01 75)",
+          "oklch(80% 0.01 75)",
+          "oklch(90% 0.01 75)",
+          "oklch(95% 0.01 75)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Buenos Aires Brick",
+        "canonical": "oklch(52% 0.14 25)",
+        "tonalRamp": [
+          "oklch(15% 0.14 25)",
+          "oklch(25% 0.14 25)",
+          "oklch(35% 0.14 25)",
+          "oklch(42% 0.14 25)",
+          "oklch(52% 0.14 25)",
+          "oklch(62% 0.14 25)",
+          "oklch(74% 0.10 25)",
+          "oklch(87% 0.06 25)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Buenos Aires Brick (Hover)",
+        "canonical": "oklch(58% 0.14 25)",
+        "tonalRamp": [
+          "oklch(15% 0.14 25)",
+          "oklch(25% 0.14 25)",
+          "oklch(38% 0.14 25)",
+          "oklch(48% 0.14 25)",
+          "oklch(58% 0.14 25)",
+          "oklch(68% 0.14 25)",
+          "oklch(78% 0.10 25)",
+          "oklch(90% 0.06 25)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Case File Gray",
+        "canonical": "oklch(62% 0.006 245)",
+        "tonalRamp": [
+          "oklch(15% 0.006 245)",
+          "oklch(25% 0.006 245)",
+          "oklch(35% 0.006 245)",
+          "oklch(45% 0.006 245)",
+          "oklch(55% 0.006 245)",
+          "oklch(62% 0.006 245)",
+          "oklch(75% 0.006 245)",
+          "oklch(88% 0.004 245)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only. Maximum 5.5rem ceiling. The weight at which the firm's authority is first communicated."
+      },
+      "subline": {
+        "displayName": "Subline",
+        "purpose": "Hero credential line and section kickers. Weight 500 bridges display and body without competing."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose. max-width 52ch on dark surfaces, 65–75ch on light sections."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Single-use uppercase brand positioning kicker. Used once in the hero — not repeated as section grammar."
+      }
+    },
+    "shadows": [
+      {
+        "name": "navbar-scroll",
+        "value": "0 1px 0 oklch(9% 0.01 245 / 0.08)",
+        "purpose": "Structural separator on the fixed Navbar after 60px scroll. Appears only when the navbar transitions from transparent to opaque. The only shadow in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Default easing for entrance animations. All Framer Motion stagger reveals use this curve."
+      },
+      {
+        "name": "ease-standard",
+        "value": "ease",
+        "purpose": "Hover state transitions (background-color, border-color, opacity). 150–200ms duration."
+      },
+      {
+        "name": "ease-register",
+        "value": "ease",
+        "purpose": "Navbar register transition (transparent → opaque). 300ms duration."
+      }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "768px", "note": "Nav links appear; ghost CTA pairs with primary" },
+      { "name": "lg", "value": "1024px", "note": "Decorative '20' ghost element appears in hero right column" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main conversion CTA. Buenos Aires Brick on dark and light surfaces. Verb + object label always.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Escribir por WhatsApp</a>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap'); .ds-btn-primary { display: inline-flex; align-items: center; background-color: oklch(52% 0.14 25); color: oklch(95% 0.01 75); font-family: 'Archivo', sans-serif; font-size: 1rem; font-weight: 700; line-height: 1; padding: 0.9rem 1.75rem; border-radius: 0.25rem; text-decoration: none; transition: background-color 150ms ease; white-space: nowrap; -webkit-font-smoothing: antialiased; } .ds-btn-primary:hover { background-color: oklch(58% 0.14 25); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(58% 0.14 25); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary CTA. Dark surfaces only, paired alongside Primary. Never used alone or in light sections.",
+      "html": "<div style=\"background: oklch(11% 0.012 245); padding: 2rem; display: inline-flex;\"><a class=\"ds-btn-ghost\" href=\"#\">Llamar ahora</a></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap'); .ds-btn-ghost { display: inline-flex; align-items: center; color: oklch(95% 0.01 75); font-family: 'Archivo', sans-serif; font-size: 1rem; font-weight: 500; line-height: 1; padding: 0.875rem 1.75rem; border: 1px solid oklch(95% 0.01 75 / 0.4); border-radius: 0.25rem; text-decoration: none; transition: border-color 150ms ease; white-space: nowrap; -webkit-font-smoothing: antialiased; } .ds-btn-ghost:hover { border-color: oklch(95% 0.01 75 / 0.7); } .ds-btn-ghost:focus-visible { outline: 2px solid oklch(95% 0.01 75 / 0.5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Nav CTA",
+      "kind": "button",
+      "refersTo": "nav-cta",
+      "description": "Persistent WhatsApp action in the fixed Navbar. Smaller than the hero primary; same Buenos Aires Brick.",
+      "html": "<a class=\"ds-nav-cta\" href=\"#\">WhatsApp</a>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap'); .ds-nav-cta { display: inline-flex; align-items: center; background-color: oklch(52% 0.14 25); color: oklch(95% 0.01 75); font-family: 'Archivo', sans-serif; font-size: 0.875rem; font-weight: 700; padding: 0.5rem 1.25rem; border-radius: 0.25rem; text-decoration: none; transition: background-color 150ms ease; white-space: nowrap; -webkit-font-smoothing: antialiased; } .ds-nav-cta:hover { background-color: oklch(58% 0.14 25); } .ds-nav-cta:focus-visible { outline: 2px solid oklch(58% 0.14 25); outline-offset: 3px; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Navbar anchor links. Color changes with scroll state (dark: hero-text, light: ink). Opacity-based hover.",
+      "html": "<nav style=\"background: oklch(11% 0.012 245); padding: 1rem 2rem; display: flex; gap: 2rem;\"><a class=\"ds-nav-link ds-nav-link--dark\" href=\"#\">Áreas</a><a class=\"ds-nav-link ds-nav-link--dark\" href=\"#\">Sobre Fabio</a><a class=\"ds-nav-link ds-nav-link--dark\" href=\"#\">Contacto</a></nav>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap'); .ds-nav-link { font-family: 'Archivo', sans-serif; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: opacity 200ms ease; -webkit-font-smoothing: antialiased; } .ds-nav-link--dark { color: oklch(95% 0.01 75); opacity: 0.7; } .ds-nav-link--light { color: oklch(9% 0.01 245); opacity: 0.7; } .ds-nav-link:hover, .ds-nav-link:focus-visible { opacity: 1; } .ds-nav-link:focus-visible { outline: none; text-decoration: underline; }"
+    },
+    {
+      "name": "Hero CTA Pair",
+      "kind": "custom",
+      "refersTo": "button-primary",
+      "description": "The canonical hero CTA pattern: Primary + Ghost side by side on the dark hero surface. The only context where the ghost button appears.",
+      "html": "<div class=\"ds-hero-ctas\"><a class=\"ds-hero-btn-primary\" href=\"#\">Escribir por WhatsApp</a><a class=\"ds-hero-btn-ghost\" href=\"#\">Llamar ahora</a></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&display=swap'); .ds-hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; background: oklch(11% 0.012 245); padding: 2rem; } .ds-hero-btn-primary { display: inline-flex; align-items: center; background-color: oklch(52% 0.14 25); color: oklch(95% 0.01 75); font-family: 'Archivo', sans-serif; font-size: 1rem; font-weight: 700; line-height: 1; padding: 0.9rem 1.75rem; border-radius: 0.25rem; text-decoration: none; transition: background-color 150ms ease; white-space: nowrap; -webkit-font-smoothing: antialiased; } .ds-hero-btn-primary:hover { background-color: oklch(58% 0.14 25); } .ds-hero-btn-primary:focus-visible { outline: 2px solid oklch(58% 0.14 25); outline-offset: 3px; } .ds-hero-btn-ghost { display: inline-flex; align-items: center; color: oklch(95% 0.01 75); font-family: 'Archivo', sans-serif; font-size: 1rem; font-weight: 500; line-height: 1; padding: 0.875rem 1.75rem; border: 1px solid oklch(95% 0.01 75 / 0.4); border-radius: 0.25rem; text-decoration: none; transition: border-color 150ms ease; white-space: nowrap; -webkit-font-smoothing: antialiased; } .ds-hero-btn-ghost:hover { border-color: oklch(95% 0.01 75 / 0.7); } .ds-hero-btn-ghost:focus-visible { outline: 2px solid oklch(95% 0.01 75 / 0.5); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Practitioner's Door",
+    "overview": "The office you need when something has gone wrong. A fixed navbar marked 'Dr. Mombello.' A dark hero with a single large statement. One button. The design communicates competence before a word is read — not through decoration, but through discipline. Every removed element is a trust signal. Every restraint is a claim that the work speaks for itself.\n\nThis is a decision surface, not a portfolio. The visitor arrives scared: a criminal charge, a termination letter, a custody dispute. They have seconds and a phone. The design must answer three questions in order — 'Is this person competent?', 'Can I trust them?', 'How do I reach them now?' — and answer them without demanding patience. Typography does the work; color marks the action; copy speaks to one person, not a category.\n\nThe palette operates in two registers: a near-black hero surface for the first fold, and a near-neutral white body for the sections that follow. The single accent color (Buenos Aires Brick) appears only where a visitor should act.",
+    "keyCharacteristics": [
+      "Single grotesque family (Archivo), weight axis as the sole hierarchy engine",
+      "Two color registers (near-black hero, near-white body) with an abrupt, intentional break between them",
+      "One accent color (Buenos Aires Brick), one role: action-only",
+      "Flat elevation at rest; one structural hairline on the navbar post-scroll",
+      "All UI copy in Spanish, always second-person singular, always one person in a bad situation",
+      "Typographic scale minimum 1.25× between adjacent roles"
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Buenos Aires Brick (--color-accent) appears on CTAs and the navbar button — nowhere else. Its rarity is the conversion signal. Using it decoratively dilutes what it means.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Register Rule",
+        "body": "The site operates in exactly two color registers: dark (hero) and light (body sections). There is no gradient transition, no blurred boundary, no intermediate surface. The fold break is abrupt and intentional.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Cream Rule",
+        "body": "The body background is Document White (oklch(97.5% 0.005 90)), chroma 0.005. Any token in the warm-neutral band (L 0.84–0.97, C < 0.06, hue 40–100) reads as cream/sand/parchment and triggers the AI-generated tell.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Serif Rule",
+        "body": "The system uses Archivo exclusively. Do not introduce a display serif for testimonials, pull quotes, or accent headlines. The voice is the grotesque's voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Eyebrow-Once Rule",
+        "body": "The small uppercase tracked label is a brand positioning statement. It appears once in the hero. If it appears above a second section heading on the same page, it is AI section-grammar, not brand voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight-Not-Color Rule",
+        "body": "Emphasis within body copy is through font-weight (400 → 500 → 700), not through color. Colored inline text violates The One Accent Rule.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Interactive elements communicate state through color shift, not shadow lift. No translateY, no box-shadow on hover. The system does not use shadow as decoration or as a hover affordance.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Hairline Rule",
+        "body": "The only shadow in the system is the navbar's 1px post-scroll separator. Any second box-shadow must carry functional meaning (focus ring, modal backdrop) — not aesthetic depth.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use --color-accent only on CTAs and the navbar button. Scarcity is the trust signal.",
+      "Do keep all UI copy in Spanish: navigation, aria-labels, placeholders, error messages, meta tags.",
+      "Do write copy to one person in a bad situation — second-person singular, never to a crowd.",
+      "Do use clamp() for all fluid type sizes. No breakpoint-only font scaling.",
+      "Do use dvh for viewport heights. vh is prohibited.",
+      "Do use rem for all font sizes, margins, and padding. px is for borders and outlines only.",
+      "Do use CTA labels as verb + object: 'Escribir por WhatsApp', 'Llamar ahora'.",
+      "Do keep the ghost button for dark surfaces only, paired with a primary.",
+      "Do use text-wrap: balance on H1–H3 and text-wrap: pretty on body paragraphs.",
+      "Do verify contrast at every breakpoint: body text minimum 4.5:1 against its background."
+    ],
+    "donts": [
+      "Don't use navy-and-gold, marble textures, scales-of-justice imagery, or stock photos of suited handshakes.",
+      "Don't use startup or SaaS aesthetics: gradient blobs, glassmorphism, cream/warm-neutral backgrounds, hero metric stat grids.",
+      "Don't use border-left or border-right greater than 1px as a colored accent stripe on any element.",
+      "Don't use gradient text (background-clip: text + gradient background).",
+      "Don't add a second typeface. Archivo is the system.",
+      "Don't use the uppercase tracked eyebrow label above more than one section.",
+      "Don't pair border and box-shadow on the same element as decoration.",
+      "Don't use numbered section markers (01 / 02 / 03) as structural scaffolding.",
+      "Don't use em dashes anywhere in the UI copy.",
+      "Don't use filler qualifiers: 'muy', 'realmente', 'simplemente', 'básicamente'."
+    ]
+  }
+}
