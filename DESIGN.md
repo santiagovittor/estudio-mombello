@@ -8,7 +8,7 @@ colors:
   hero-text: "oklch(95% 0.01 75)"
   accent: "oklch(52% 0.14 25)"
   accent-hover: "oklch(58% 0.14 25)"
-  muted: "oklch(62% 0.006 245)"
+  muted: "oklch(48% 0.006 245)"
 typography:
   display:
     fontFamily: "Archivo, sans-serif"
@@ -95,7 +95,7 @@ The palette is near-monochromatic with a single saturated accent. Scarcity is th
 - **Document White** (`oklch(97.5% 0.005 90)`): Light section background. Chroma 0.005 — barely tinted, enough to avoid optical stark white, not enough to read warm. Not cream. Not warm neutral. The tint references the accent's hue axis, not warmth-by-default.
 - **Chamber Dark** (`oklch(11% 0.012 245)`): Hero section background. Marginally distinct from ink (chroma 0.012 vs 0.01) so it doesn't disappear against it at boundaries. Authoritative; reads as intentional dark, not failed dark.
 - **Hero White** (`oklch(95% 0.01 75)`): Text and UI elements on dark surfaces only (hero, navbar in dark state, CTA text). The 75° hue (slightly warm) prevents it from reading clinical white on the dark background.
-- **Case File Gray** (`oklch(62% 0.006 245)`): Muted/secondary text. Supporting information only — body copy that should recede, captions, minor UI labels.
+- **Case File Gray** (`oklch(48% 0.006 245)`): Muted/secondary text. Supporting information only — body copy that should recede, captions, minor UI labels.
 
 **Named Rules:**
 

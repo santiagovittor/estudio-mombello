@@ -350,7 +350,7 @@ export default function Contact(_: ContactProps) {
             borderRadius: '0.25rem',
             overflow: 'hidden',
             aspectRatio: '4 / 5',
-            backgroundColor: 'oklch(62% 0.006 245 / 0.08)',
+            backgroundColor: 'oklch(48% 0.006 245 / 0.08)',
           }}
         >
           <iframe

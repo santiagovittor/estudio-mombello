@@ -64,7 +64,7 @@ export default function Footer() {
             <span
               style={{
                 fontWeight: 400,
-                fontSize: '0.8rem',
+                fontSize: '0.8125rem',
                 color: 'oklch(97.5% 0.005 90 / 0.45)',
               }}
             >

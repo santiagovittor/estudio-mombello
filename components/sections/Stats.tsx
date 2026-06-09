@@ -129,7 +129,8 @@ export default function Stats() {
 
   return (
     <section
-      aria-label="Estadísticas"
+      id="estadisticas"
+      aria-labelledby="estadisticas-heading"
       style={{
         backgroundColor: 'var(--color-paper)',
         paddingTop: 'clamp(4rem, 8vw, 6rem)',
@@ -138,6 +139,7 @@ export default function Stats() {
         paddingRight: 'clamp(1.5rem, 5vw, 6rem)',
       }}
     >
+      <h2 id="estadisticas-heading" className="sr-only">Estadísticas</h2>
       <div style={{ maxWidth: '90rem', margin: '0 auto' }}>
         <div className="grid grid-cols-2 gap-y-10 md:grid-cols-4 md:gap-y-0">
           {STATS.map((stat, i) => (

@@ -7,7 +7,7 @@
   --color-hero-text: oklch(95% 0.01 75);
   --color-accent: oklch(52% 0.14 25);
   --color-accent-hover: oklch(58% 0.14 25);
-  --color-muted: oklch(62% 0.006 245);
+  --color-muted: oklch(48% 0.006 245);
 
   /* --font-archivo is injected by next/font onto <html> */
   --font-display: var(--font-archivo);
@@ -110,6 +110,20 @@ body {
   outline-offset: 3px;
 }
 
+/* ─── Screen reader only ─── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* ─── Stats section ─── */
 
 @media (min-width: 768px) {
@@ -119,6 +133,10 @@ body {
 }
 
 /* ─── FAQ ─── */
+
+.faq-question-btn {
+  min-height: 2.75rem;
+}
 
 .faq-question-btn:focus-visible {
   outline: 2px solid var(--color-accent-hover);
@@ -172,6 +190,8 @@ body {
 
 .contact-input:focus-visible {
   border-color: var(--color-ink);
+  outline: 2px solid var(--color-ink);
+  outline-offset: -2px;
 }
 
 .contact-input::placeholder {
@@ -185,6 +205,9 @@ body {
 }
 
 .contact-phone-inline {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
   color: var(--color-ink);
   font-weight: 500;
   text-decoration: none;
@@ -204,6 +227,9 @@ body {
 }
 
 .contact-nap-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
   color: var(--color-muted);
   text-decoration: none;
   transition: color 150ms ease;
@@ -259,6 +285,7 @@ body {
   text-decoration: none;
   color: var(--color-paper);
   opacity: 0.65;
+  padding-block: 0.75rem;
   transition: opacity 200ms ease;
 }
 
@@ -279,6 +306,9 @@ body {
 }
 
 .credit-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
   color: oklch(97.5% 0.005 90 / 0.35);
   transition: color 0.3s ease;
   text-decoration: none;
@@ -316,6 +346,7 @@ body {
   font-size: 0.875rem;
   font-weight: 700;
   padding: 0.5rem 1.25rem;
+  min-height: 2.75rem;
   border-radius: 0.25rem;
   text-decoration: none;
   background-color: var(--color-accent);

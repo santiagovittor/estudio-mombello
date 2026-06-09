@@ -51,6 +51,15 @@ export default function HeroStatic() {
       ctx.putImageData(imageData, 0, 0);
     };
 
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        cancelAnimationFrame(rafId);
+      } else {
+        rafId = requestAnimationFrame(drawFrame);
+      }
+    };
+    document.addEventListener('visibilitychange', onVisibilityChange);
+
     rafId = requestAnimationFrame(drawFrame);
 
     const handleResize = () => setSize();
@@ -59,6 +68,7 @@ export default function HeroStatic() {
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener('resize', handleResize);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
     };
   }, []);
 

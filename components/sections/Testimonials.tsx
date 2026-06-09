@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useReducedMotion } from 'framer-motion';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
@@ -26,7 +26,7 @@ function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
           key={i}
           aria-hidden="true"
           style={{
-            color: i < rating ? 'var(--color-accent)' : 'var(--color-muted)',
+            color: i < rating ? 'var(--color-ink)' : 'var(--color-muted)',
             opacity: i < rating ? 1 : 0.35,
             fontSize: '0.9375rem',
             letterSpacing: '0.05em',
@@ -156,6 +156,20 @@ export default function Testimonials() {
     autoplay?.play();
   }, [emblaApi]);
 
+  useEffect(() => {
+    if (!emblaApi) return;
+    const plugin = emblaApi.plugins()?.autoplay as EmblaAutoplay | undefined;
+    if (!plugin) return;
+    const handleVisibility = () => {
+      if (document.hidden) plugin.stop();
+      else plugin.play();
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
+  }, [emblaApi]);
+
   if (REVIEWS.length === 0) return null;
 
   return (
@@ -199,7 +213,7 @@ export default function Testimonials() {
               gap: '0.375rem',
             }}
           >
-            <span aria-hidden="true" style={{ color: 'var(--color-accent)', fontSize: '1rem' }}>
+            <span aria-hidden="true" style={{ color: 'var(--color-ink)', fontSize: '1rem' }}>
               ★
             </span>
             <span>

@@ -15,6 +15,7 @@ export default function Booking() {
   return (
     <section
       id="turnos"
+      aria-labelledby="turnos-heading"
       style={{
         backgroundColor: 'var(--color-hero-bg)',
         color: 'var(--color-hero-text)',
@@ -23,6 +24,7 @@ export default function Booking() {
     >
       <div style={{ maxWidth: '56rem', margin: '0 auto', overflow: 'clip' }}>
         <h2
+          id="turnos-heading"
           className="section-heading"
           style={{
             fontSize: 'clamp(1.875rem, 4vw, 3rem)',
