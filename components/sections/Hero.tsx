@@ -6,6 +6,7 @@ import { WHATSAPP_URL, YEARS_EXPERIENCE } from '@/lib/constants';
 import { trackWhatsappClick, trackCallClick } from '@/lib/analytics';
 import HeroStatic from '@/components/ui/HeroStatic';
 import Magnetic from '@/components/ui/Magnetic';
+import HeroCounter from '@/components/ui/HeroCounter';
 
 const EASE_OUT_QUART = [0.25, 1, 0.5, 1] as const;
 const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;
@@ -70,6 +71,7 @@ export default function Hero() {
           top: 0,
           bottom: 0,
           width: '38%',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           overflow: 'hidden',
@@ -77,38 +79,52 @@ export default function Hero() {
           userSelect: 'none',
         }}
       >
+        {/* Top measurement cap */}
         <div
+          aria-hidden="true"
+          className="hero-hairline-scan"
           style={{
-            transform: 'rotate(-90deg)',
-            opacity: 0.30,
-            fontFamily: 'var(--font-display)',
-            lineHeight: 0.88,
-            color: 'var(--color-hero-text)',
+            width: '100%',
+            height: '1px',
+            marginBottom: '1rem',
+            flexShrink: 0,
+            animationDelay: '0s',
+          }}
+        />
+
+        {/* Animated counter — client component */}
+        <HeroCounter />
+
+        {/* Bottom hairline */}
+        <div
+          aria-hidden="true"
+          className="hero-hairline-scan"
+          style={{
+            width: '100%',
+            height: '1px',
+            marginTop: '1rem',
+            marginBottom: '1.25rem',
+            flexShrink: 0,
+            animationDelay: '-1.75s',
+          }}
+        />
+
+        {/* AÑOS label */}
+        <span
+          aria-hidden="true"
+          style={{
+            display: 'block',
+            fontSize: '0.72rem',
+            fontWeight: 400,
+            fontFamily: 'inherit',
+            letterSpacing: '0.42em',
+            color: 'oklch(95% 0.01 75 / 0.36)',
+            textTransform: 'uppercase',
+            userSelect: 'none',
           }}
         >
-          <span
-            style={{
-              display: 'block',
-              fontSize: 'clamp(9rem, 16vw, 20rem)',
-              fontWeight: 900,
-            }}
-          >
-            {YEARS_EXPERIENCE}
-          </span>
-          <span
-            style={{
-              display: 'block',
-              fontSize: '1.5rem',
-              fontWeight: 400,
-              textAlign: 'center',
-              letterSpacing: '0.45em',
-              textTransform: 'uppercase' as const,
-              paddingLeft: '0.45em',
-            }}
-          >
-            años
-          </span>
-        </div>
+          AÑOS
+        </span>
       </div>
 
       {/* Main content */}

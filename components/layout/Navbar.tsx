@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { AnimatePresence, motion } from 'framer-motion';
 import { WHATSAPP_URL } from '@/lib/constants';
 import { trackWhatsappClick } from '@/lib/analytics';
 
@@ -33,8 +34,10 @@ export default function Navbar() {
         right: 0,
         zIndex: 50,
         backgroundColor: scrolled ? 'var(--color-paper)' : 'transparent',
-        boxShadow: scrolled ? '0 1px 0 oklch(9% 0.01 245 / 0.08)' : 'none',
-        transition: 'background-color 300ms ease, box-shadow 300ms ease',
+        borderBottom: scrolled
+          ? '1px solid oklch(from var(--color-ink) l c h / 0.08)'
+          : '1px solid transparent',
+        transition: 'background-color 300ms ease, border-color 0.4s ease',
       }}
     >
       <div
@@ -74,23 +77,36 @@ export default function Navbar() {
               key={href}
               href={href}
               className="nav-link nav-link-underline"
-              style={{ color: textColor, transition: 'color 300ms ease, opacity 200ms ease' }}
+              style={{ color: textColor, letterSpacing: '0.04em', transition: 'color 300ms ease, opacity 200ms ease' }}
             >
               {label}
             </a>
           ))}
         </nav>
 
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={trackWhatsappClick}
-          className="nav-cta"
-          aria-label="Escribir por WhatsApp"
-        >
-          WhatsApp
-        </a>
+        <AnimatePresence mode="wait">
+          {scrolled && (
+            <motion.div
+              key="nav-cta"
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ type: 'spring', stiffness: 500, damping: 35 }}
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={trackWhatsappClick}
+                className="nav-cta"
+                aria-label="Escribir por WhatsApp"
+              >
+                WhatsApp
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
